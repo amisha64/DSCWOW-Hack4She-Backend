@@ -26,7 +26,7 @@ mongoose.connect('mongodb+srv://hack4she:5X4fcfCqsXTcg0x1@cluster0.5rxty.mongodb
 mongoose.connection.once('open', () => console.log('DB Connected'))
 
 //api routes --- POSTMAN
-app.get('/', (req, res) => res.status(200).send('hello world'))
+app.get('/', (req, res) => res.status(200).send('This is the backend for Hack4She! Thanks for stopping by!'))
 
 app.get('/getreports', (req, res) => {
     Reports.find({}, (err, data) => {
